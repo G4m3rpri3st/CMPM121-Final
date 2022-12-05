@@ -42,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
         }else{
             rb.drag = 0;
         }
+        Debug.Log("horizontal:");
+        Debug.Log(horizontalInput);
+        Debug.Log("vertical:");
+        Debug.Log(verticalInput);
     }
 
     private void FixedUpdate()
