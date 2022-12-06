@@ -8,6 +8,8 @@ public class DayNightController : MonoBehaviour
 
     public GameObject light;
 
+    public GameObject finishedtext;
+
     // Update is called once per frame
     void Update()
     {
@@ -19,6 +21,7 @@ public class DayNightController : MonoBehaviour
         if(CollectibleCount.count == 5){
             RenderSettings.skybox = newsky;
             light.SetActive(true);
+            finishedtext.SetActive(true);
             CollectibleCount.count = 0;
         }
     }
