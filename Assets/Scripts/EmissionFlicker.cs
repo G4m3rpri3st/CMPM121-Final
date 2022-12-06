@@ -18,7 +18,7 @@ public class EmissionFlicker : MonoBehaviour
     {
         
         //light = GetComponent<Light>();
-        startingIntensity = orblight.intensity;
+        //startingIntensity = orblight.intensity;
     }
     
     void Update()
@@ -26,6 +26,6 @@ public class EmissionFlicker : MonoBehaviour
         time += Time.deltaTime * (1 - Random.Range(-speedRandomness, speedRandomness)) * Mathf.PI;
         Debug.Log("Sin is ");
         Debug.Log(Mathf.Sin(time * flickersPerSecond) * 20);
-        orblight.intensity = 15 * Mathf.Sin(time * flickersPerSecond) * flickerIntensity;
+        //orblight.intensity = 15 * Mathf.Sin(time * flickersPerSecond) * flickerIntensity;
     }
 }
