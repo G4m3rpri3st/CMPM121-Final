@@ -6,7 +6,7 @@ public class CollectibleCount : MonoBehaviour
 {
     // Start is called before the first frame update
     TMPro.TMP_Text text;
-    int count;
+    public static int count;
 
     void Awake(){
         text = GetComponent<TMPro.TMP_Text>();
