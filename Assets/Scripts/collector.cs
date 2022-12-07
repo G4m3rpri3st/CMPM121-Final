@@ -6,6 +6,7 @@ using System;
 public class collector : MonoBehaviour
 {
     public static event Action OnCollected;
+    public AudioSource gemSound;
     public static int total;
 
     void Awake() => total++;
@@ -16,6 +17,7 @@ public class collector : MonoBehaviour
         if (other.CompareTag("Player")){
             OnCollected?.Invoke();
             Destroy(gameObject);
+            gemSound.Play();
         }
     }
 }
